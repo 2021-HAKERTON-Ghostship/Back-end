@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charst="UTF-8">
+        <title>Chec - Q</title> 
+        <link rel="stylesheet" href="../styles/register.css">
+
+
+        <script>
+            function register() {
+                const p1 = document.getElementById('PW1').value
+                const p2 = document.getElementById('PW2').value
+                console.log(p1, p2)
+                if (p1 != p2) {
+                    alert("비밀번호가 일치하지 않습니다")
+                }
+                else {
+                    // test();
+                    alert('회원가입이 완료되었습니다')
+                    location.href = "/"
+                    document.insert.submit();
+                }
+            }
+            
+            
+        </script>
+    </head>
+
+    <body>
+        <h1 id="title">Chec - Q</h1>
+        <h3 id="title">REGISTER</h3>
+
+        <div id="inputContainer">
+            <div id="inputWrap">
+                <form id="inputForm" action="/user/register" method="post" name="insert">
+                    <input id="NAME" type="text" placeholder="NAME" name="name">
+                    
+                    <input id="ID" type="text" placeholder="NEW-ID" name="id">
+                    
+                    <input id="PW1" type="password" placeholder="NEW-PW" name="password"> 
+                    <input id="PW2" type="password" placeholder="CHECK-PW" name="password2">
+                </form>
+                <form action="">
+                    <input id="edit" onclick="location.href='localhost:3000';register();" value="EDIT" type="button" >
+                </form>
+                
+            </div>
+        </div>
+    </body>
+
+</html>

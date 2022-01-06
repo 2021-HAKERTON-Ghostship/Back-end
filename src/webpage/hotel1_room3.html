@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chec - Q</title>
+    <link rel="stylesheet" href="../styles/hotel3_room.css">
+</head>
+<body>
+    <div>
+        <h1>Chec - Q</h1>
+        <input id="title" type="button" value="방3">
+    </div>
+
+    <div class="information">
+        <h3>인원 : 3인 ~ 4인</h3>
+        <h3>가격 : 1박 80000원</h3>
+        <img src="../images/호텔3.jpg" width="600" height="300"><br><br>
+    </div>
+
+    <div>
+        <input id="reservation" type="button" value="예약하기" onclick="location.href='my_reservation.html'; room_num('hotel1', 'room3');"><br><br>
+    </div>
+
+    <div>
+        <input id="back" type="button" value="뒤로가기" onclick="location.href='hotel1.html'">
+    </div>
+</body>
+
+<script>
+    function room_num(name, num) {
+        location.href = "my_reservation.html?" + name + ":" + num
+    }
+</script>
+</html>

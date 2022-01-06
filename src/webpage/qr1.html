@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chec - Q</title>
+    <!-- <link rel="stylesheet" href="../styles/qr.css"> -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.qrcode.js"></script>
+    <script type="text/javascript" src="../js/qrcode.js"></script>
+    
+</head>
+<body>
+    <!-- <div> -->
+        <h1>Chec - Q</h1>
+        <input id="title" type="button" value="방1">
+        <!-- </div> -->
+        
+        <div class="container">
+            <div class="box">
+                <div id="gcDiv"></div>
+            </div>
+            
+            
+            <script>
+                randnum = (Math.floor( ( Math.random() * 10000000000 )))
+                jQuery('#gcDiv').qrcode({
+                    
+                    render   : "table",
+                    width : 300,
+                    height : 300,
+                    text : String(randnum)
+                }); 
+                  
+            </script>   
+        </div>
+        
+    <!-- <h2 id="time">갱신까지</h2> -->
+    <!-- <div class="js-time" id="time">
+        <h2>00</h2>
+    </div> -->
+    <h2 class="text-center" id="count-down-timer"></h2>
+    <input id="back" type="button" value="뒤로가기" onclick="location.href='main_menu.html'">
+
+
+    <script src="../js/time.js"></script>
+</body>
+</html>

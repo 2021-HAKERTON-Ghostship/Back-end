@@ -1,0 +1,99 @@
+/* *{
+    text-align: center;
+} */
+
+#title{
+    color: #ffffff;
+    text-align: center;
+}
+
+body{
+    background-color: #222222;
+}
+
+#inputContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+#inputWrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+#inputForm{
+    display: flex;
+    row-gap: 25px;
+    flex-direction: column;
+}
+
+#NAME{
+    width: 300px;
+    max-width : 350px;
+    min-width: 120px;
+    height: 26px;
+    background: #C4C4C4;
+    border-radius: 10px;
+    text-align: center;
+    border: hidden;
+    margin: 0px auto;
+
+}
+
+#ID{
+    width: 300px;
+    max-width : 350px;
+    min-width: 120px;
+    height: 26px;
+    background: #C4C4C4;
+    border-radius: 10px;
+    text-align: center;
+    border: hidden;
+    margin: 0px auto;
+
+}
+
+#PW1{
+    width: 300px;
+    max-width : 350px;
+    min-width: 120px;
+    height: 26px;
+    background: #C4C4C4;
+    border-radius: 10px;
+    text-align: center;
+    border: hidden;
+    margin: 0px auto;
+}
+
+#PW2{
+    width: 300px;
+    max-width : 350px;
+    min-width: 120px;
+    height: 26px;
+    background: #C4C4C4;
+    border-radius: 10px;
+    text-align: center;
+    border: hidden;
+    margin: 0px auto;
+}
+
+#edit{
+    border: hidden;
+    width: 300px;
+    max-width : 350px;
+    min-width: 120px;
+    height: 26px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+    background-color: #3897CD;
+    color: black;
+}
+
+#edit:hover{
+    background-color: skyblue;
+    color: rgb(37, 37, 37);
+}

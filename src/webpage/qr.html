@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chec - Q</title>
+    <link rel="stylesheet" href="../styles/qr.css">
+
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.qrcode.js"></script>
+    <script type="text/javascript" src="../js/qrcode.js"></script>
+
+</head>
+<body onload="initQRCode()">
+    <!-- <div> -->
+        <h1>Chec - Q</h1>
+        <input id="title" type="button" value="방1">
+    <!-- </div> -->
+    <div class="container">
+        <div class="box">
+            <div id="gcDiv"></div>
+        </div>
+
+        <script src="../js/test.js">
+            // function initQRCode() {
+            //     $.ajax({
+            //         url: '/qr?qrcode=rand',
+            //         method: 'GET',
+            //         success: function (data) {
+            //             $('#gcDiv').qrcode({
+            //                 render   : "table",
+            //                 width : 300,
+            //                 height : 300,
+            //                 text   : "" + data,
+            //             }); 
+            //         },
+            //     });
+            // }
+            
+        </script>
+    </div>
+    <br>
+    <br>
+    <input id="back" type="button" value="뒤로가기" onclick="location.href='/my_reservation'">
+
+    <h2 class="text-center" id="count-down-timer"></h2>
+
+</body>
+</html>

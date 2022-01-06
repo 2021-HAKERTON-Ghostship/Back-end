@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>Chec - Q</title>
+    <link rel="stylesheet" href="../styles/my_reservation.css">
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        function sendrand(){
+            document.send.submit();
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Chec - Q</h1>
+        <input id="title" type="button" value="나의 예약">
+    </div>
+
+    <div>
+        <form action="/qrpage">        `
+            <input id="my_hotel" name="rand" type="button" value="hotel1" onclick="location.href='/qrpage'"><br><br>
+        </form>
+    </div>
+
+    <input id="back" type="button" value="뒤로가기" onclick="location.href='/main_menu'">
+</body>
+
+    <script>
+        temp = location.href.split("?")
+    
+        data = temp[1].split(":")
+        name = data[0]
+        num = data[1]
+        $('input[id=my_hotel]').attr('value',name + " " + num)
+    </script>
+
+</html>

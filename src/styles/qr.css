@@ -1,0 +1,80 @@
+body{
+    background-color: #222222;
+    text-align: center;
+}
+
+h1{
+    color: #fff;
+}
+
+#title{
+    color: #fff;
+}
+
+.container{
+    width: 100vw;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: #222222;
+}
+
+#count-down-timer{
+    color: white;
+}
+
+.box{
+    background-color:white;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gcDiv {
+    display: flex;
+    position: absolute;
+}
+
+#title{
+    color: #ffffff;
+    background: black;
+    border-radius: 10px;
+    text-align: center;
+    border: hidden;
+    font-weight:bold;
+    font-size:large;
+    margin: 1px 100px 30px;
+}
+
+#room{
+    width: 300px;
+    max-width : 350px;
+    min-width: 120px;
+    height: 40px;
+    background: #C4C4C4;
+    border-radius: 10px;
+    text-align: center;
+    border: hidden;
+    font-weight:bold;
+    font-size:large;
+    margin: 20 20 20 20;
+}
+
+#back{
+    width: 320px;
+    /* max-width: 350px;
+    min-width: 120px; */
+    height: 29px;
+    background-color: #3897CD;
+    border-radius: 10px;
+    text-align: center;
+    border: hidden;
+    font-weight:bold;
+    font-size:large;
+    margin: auto auto 20px auto;
+    justify-content: center;
+    
+}
+
